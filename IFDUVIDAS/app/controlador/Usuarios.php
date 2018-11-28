@@ -98,8 +98,17 @@ switch ($acao) {
 
                 header('location: Usuarios.php');
             } else {
-
-                echo "dados incorretos";
+                
+                echo '<script>
+function showUp(){
+ alert("Os dados inseridos estão incorretos\nPor favor tente novamente");
+}
+ 
+// run the function
+showUp();
+window.location.replace("../visualizacao/login.php");
+</script>';
+                
             };
         }
 
